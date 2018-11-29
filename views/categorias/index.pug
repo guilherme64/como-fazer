@@ -1,0 +1,15 @@
+doctype html
+include ../header
+h1 Categorias
+a(class='btn btn-primary' href ='categorias/nova/') Adicionar
+ul(class='list-group')
+    each val in categorias
+        li(class='list-group-item')   
+            a(href='/publicacoes/categoria/'+val.id)
+                h2 #{val.categoria}
+            div(class='btn-group')
+                a( class='btn btn-danger' href = ('categorias/excluir/'+val.id)) Excluir
+                a(class='btn btn-success' href = ('categorias/editar/'+val.id)) Editar
+
+
+include ../footer

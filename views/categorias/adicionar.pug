@@ -1,0 +1,14 @@
+
+include ../header
+h1 Adicionar categoria 
+
+form(class='form-inline' method='post' action = '') 
+    div(class='form-group mb-2')
+        label(for='categoria')
+            input(id='categoria' class='form-control' type = 'text' placeholder ='Insira uma categoria' required name='categoria') 
+        button(class='btn btn-primary') Salvar 
+  
+h3 #{'Última atualização:'}  
+p #{data}
+
+include ../footer

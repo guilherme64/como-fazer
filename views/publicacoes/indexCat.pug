@@ -1,0 +1,15 @@
+doctype html
+include ../header
+h1 Publicações
+
+a(class='btn btn-primary' href ='../../publicacoes/nova/') Adicionar
+ul(class='list-group')
+    each val in publicacoes
+        li(class='list-group-item')  
+            p #{val.publicacao}
+            div(class='btn-group')
+                a(class='btn btn-danger' href = ('../../publicacoes/excluir/'+categoria+'/'+val.id)) Excluir
+                a(class='btn btn-success' href = ('../../publicacoes/editar/'+categoria+'/'+val.id)) Editar
+
+
+include ../footer

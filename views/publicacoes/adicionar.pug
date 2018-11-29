@@ -1,0 +1,19 @@
+doctype html
+include ../header
+h1 Adicionar Publicação 
+div(class='jumbotron')
+    form(method='post' action = '') 
+        div(class='form-group')
+            label(for='titulo')
+                input(id='titulo' class='form-control' type = 'text' placeholder ='Título' required name='titulo')
+        div(class='form-group')    
+            label(for='categoria')
+                select(class='form-control' name='categoria' id='categoria')
+                    each cat in categorias
+                        option(value = cat.id) #{cat.categoria}
+        div(class='form-group')
+            label(for='publicacao')
+                input(id='publicacao' class='form-control' type="textarea" placeholder='Publicação' required name='publicacao')  
+            button(class='btn btn-primary') Salvar  
+
+include ../footer
