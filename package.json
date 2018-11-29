@@ -6,7 +6,7 @@
     "author": "Guilherme",
     "license": "MIT",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index"
     },
     "dependencies": {
         "axios": "^0.18.0",
