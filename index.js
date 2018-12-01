@@ -11,7 +11,6 @@ app.use('/categorias', categorias);
 app.use('/publicacoes', publicacoes);
 const port = process.env.port || 5000;
 
-console.log('hue');
 
 
 
