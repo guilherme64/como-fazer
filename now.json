@@ -1,7 +1,1 @@
-{
-    "version": 2,
-    "name": "como-fazer",
-    "builds": [
-        { "src": "index.js", "use": "@now/node-server" }
-    ]
-}
+{}
