@@ -6,14 +6,13 @@
     "author": "Guilherme",
     "license": "MIT",
     "scripts": {
-        "start": "node ."
+        "start": "node index.js"
     },
     "dependencies": {
         "axios": "^0.18.0",
         "body-parser": "^1.18.3",
         "express": "^4.16.4",
+        "now": "^12.1.8",
         "pug": "^2.0.3"
     }
-
-
 }
